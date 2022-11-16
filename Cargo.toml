@@ -1,5 +1,5 @@
 [package]
-name = "test_rest_api"
+name = "simple_twitter_rest_api"
 version = "0.1.0"
 edition = "2021"
 
