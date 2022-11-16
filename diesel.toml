@@ -1,0 +1,3 @@
+[print_schema]
+file = "src/sceham.rs"
+schema = "test"
