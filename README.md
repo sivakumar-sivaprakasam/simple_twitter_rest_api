@@ -6,7 +6,7 @@ In this sample project, I will create a small part of Twitter API to be able to 
 
 1. Cargo 
 2. PostgreSQL v14 or higher
-3. Environment variable ==DATABASE_URL== configured with postgre database URL
+3. Environment variable **DATABASE_URL** configured with postgre database URL
 
 ## Tools
 
@@ -27,7 +27,7 @@ Following tools are used:
 
 ### PostgreSQL Table schema
 
-We need to create below tables in ==test== schema in PostgreSQL DB 
+We need to create below tables in **test** schema in PostgreSQL DB 
 
 ```
 create table test.tweets (
@@ -42,7 +42,7 @@ created_at timestamp not null,
 tweet_id uuid not null references test.tweets(id));
 ```
 
-In my case, I have used custom schema named ==test==. When you create environment variable, make sure you pass the schema name in the URL
+In my case, I have used custom schema named **test**. When you create environment variable, make sure you pass the schema name in the URL
 
 Ex: 
 
@@ -52,7 +52,7 @@ set DATABASE_URL=postgres://postgres:postgres@localhost:5432/testdb?options=-c%2
 
 ### Launch the application
 
-Once the pre-requsites are well configured, please run `cargo run` to launch the application. You can use below CURL commands to test the application
+Once the pre-requsites are well configured, please run **cargo run** to launch the application. You can use below CURL commands to test the application
 
 **Post a tweet**
 
